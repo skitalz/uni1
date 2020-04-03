@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CashbackHackServiceTest {
 
     @Test
-    void remain() {
+    void testSeviceWhenBoundaryEquals() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int boundary = 1000;
         int actual = cashbackHackService.remain(boundary);
@@ -17,7 +17,7 @@ class CashbackHackServiceTest {
 
 
     @Test
-    void TestSeviceWhenSmallerAmount() {
+    void testSeviceWhenSmallerAmount() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int boundary = 900;
         int actual = cashbackHackService.remain(boundary);
@@ -27,7 +27,7 @@ class CashbackHackServiceTest {
 
 
     @Test
-    void TestWhenAmountNotUneven() {
+    void testWhenAmountNotUneven() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int boundary = 854;
         int actual = cashbackHackService.remain(boundary);
